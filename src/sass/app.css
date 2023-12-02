@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+#app {
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 0;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 390px;
+}
+
+v-card-subtitle {
+  font-size: 24px;
+  font-weight: 350;
+}
+
+.section1 {
+  background-color: rgb(192, 240, 247);
+  background-image: url("../assets/{JS}/5.svg");
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.section2 {
+  background-color: rgb(12, 105, 128);
+  background-image: url("../assets/{JS}/4.svg");
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.space {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0);
+  margin: 20px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.round {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 6em;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0);
+  margin: 20px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.container .card {
+  color: #000000;
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(63, 8, 8, 0);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+@media only screen and (max-width: 1245px) {
+  .container .card {
+    background: linear-gradient(to bottom, rgba(192, 240, 247, 0.5), rgba(12, 105, 128, 0.5));
+  }
+}
+
+.container .card:hover {
+  background: linear-gradient(to bottom, rgba(192, 240, 247, 0.5), rgba(12, 105, 128, 0.5));
+}
+
+.container .card .content {
+  text-align: center;
+}
+
+@media only screen and (min-width: 1245px) {
+  .container .card:hover .content h3 {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1245px) {
+  .container .card:hover .content p {
+    transform: translateY(0px);
+    opacity: 2;
+  }
+}
+
+@media only screen and (min-width: 1245px) {
+  .container .card:hover .content .a {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.container .card .content .h2 {
+  position: absolute;
+  top: -40px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(0, 0, 0, 0.274);
+  pointer-events: none;
+  word-break: normal;
+  opacity: 50%;
+}
+@media only screen and (max-width: 1245px) {
+  .container .card .content .h2 {
+    filter: blur(5px);
+  }
+}
+
+@media only screen and (min-width: 1245px) {
+  .container .card:hover .content .h2 {
+    filter: blur(5px);
+  }
+}
+
+.container .card .content h3 {
+  font-size: 1.8em;
+  z-index: 1;
+  margin-bottom: 20px;
+  word-break: normal;
+}
+@media only screen and (min-width: 1245px) {
+  .container .card .content h3 {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+}
+
+.container .card .content p {
+  font-size: 16px;
+  word-break: normal;
+  transition: 0.5s;
+  font-weight: 350;
+  font-size: 17px;
+}
+@media only screen and (min-width: 1245px) {
+  .container .card .content p {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
+.container .card .content .a {
+  position: relative;
+  transition: 0.5s;
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(0, 0, 0, 0.459);
+  color: #000000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 1245px) {
+  .container .card .content .a {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
+h4 {
+  font-size: 30px;
+  padding: 0 0 10px;
+  margin: 0 0 40px;
+  position: relative;
+  word-break: normal;
+}
+@media only screen and (max-width: 599px) {
+  h4 {
+    padding: 0 0 5px;
+    font-size: 24px;
+    margin: 0 0 25px;
+  }
+}
+h4:after {
+  content: "";
+  background: #000000;
+  width: 60px;
+  height: 1px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media only screen and (max-width: 599px) {
+  h4:after {
+    width: 30px;
+  }
+}
+
+.iframe {
+  height: 450px;
+  min-width: 350px;
+  max-width: 1000px;
+  width: 700px;
+}
+@media only screen and (max-width: 768px) {
+  .iframe {
+    min-width: 700px;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .iframe {
+    min-width: 350px;
+    width: auto;
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.icon {
+  background-size: 10em 20em;
+}/*# sourceMappingURL=app.css.map */

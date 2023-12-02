@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.parent{
+    background-image: url(../assets/jeremy-bishop-d3fZSXlJ3Ok-unsplash.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center bottom;
+    width: 100%;
+    height: 60vh;
+    display:flex;
+    margin-top: 0%;  
+ 
+  }
+  
+  .child{
+    margin: auto;
+    width: 100%;
+    height: 3em;
+    font-size:3.5em;
+    font-family: 'Permanent Marker', sans-serif;
+    mix-blend-mode: soft-light;
+    background-color:rgba(255, 255, 255, 0.452);
+    display:flex;
+    /*Alternative setting:*/
+    /*backdrop-filter: blur(5px);
+      color: rgba(0,0,0,0.75);
+    */
+    
+    /*Alternative setting to use with non-transparent background-color:rgba(255,255,255,1);*/
+    /*backdrop-filter:blur(5px) opacity(50%);*/
+    backdrop-filter:blur(5px);  
+    color: black;
+  }
+  
+  h2{
+    margin: auto;
+    position: center;
+  }
+  h4{
+      margin: auto;
+      position: center;
+  }
